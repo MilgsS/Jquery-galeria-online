@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: rgb(192, 44, 255);
+    padding: 16px 0px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    border-bottom: 16px solid rgb(176, 0, 161);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+form{
+    display: none;
+    background-color: rgb(230, 230, 230);
+    padding: 24px 0;
+    text-align: center;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+input{
+    padding: 8px ;
+}
+
+header button{
+    margin-left: 16px;
+}
+
+button{
+    color: white;
+    text-transform: uppercase;
+    padding: 8px ;
+    background-color: rgb(0, 195, 0); 
+    border: none;
+    font-weight: bold;
+}
+
+button:hover{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(0, 106, 0);
+}
+
+#can{
+    background-color: red;
+}
+
+#can:hover{
+    background-color: rgb(210, 11, 0);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    max-width: 25%;
+    list-style: none;
+    margin-bottom: auto;
+    max-height: 220px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+ul li img{
+    width: 100%;
+
+}
+
+.overlay{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.overlay a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay{
+    opacity: 1;
+}
